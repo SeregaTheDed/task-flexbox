@@ -4,3 +4,22 @@ body,
     height: 100%;
     margin: 0;
 }
+.flex-container {
+    display: flex;
+    width: 700px;
+    height: 300px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.flex-container :nth-child(n) {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #daa520;
+}
+.flex-container :nth-child(even) {
+    align-self: center;
+}
+.flex-container :nth-child(3) {
+    align-self: flex-end;
+}
